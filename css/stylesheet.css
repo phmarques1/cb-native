@@ -372,7 +372,7 @@ MEDIA QUERIES
   flex-direction: column;
 }
 .overview-impact {
-  order: 1;
+  order: 0;
 }
 }
 
@@ -465,7 +465,7 @@ nav a {
 }
 
 .fb {
-  order: 1;
+  order: 0;
 }
 
 .profile-wrap {
@@ -529,14 +529,11 @@ h3 {
 .impact-wrap, .social-wrap, .metrics-wrap {
   flex-direction: column;
 }
-.overview-impact, .overview-metrics {
-  order: 0;
+
+.icons {
+  margin-left: 20px;
 }
 
-.overview-impact, .overview-metrics, .fb {
-  flex-grow: 0;
-  order: 1;
-}
 
 .overview-impact p, .overview-cb p, .overview-social p, .overview-metrics p, .overview-profile p {
   font-size: 1.3em;
