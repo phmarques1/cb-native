@@ -272,8 +272,6 @@ textarea {
   background-color: #fff;
   border: 1px solid rgb(230,230,230);
   border-radius: 4px;
-  color: #8a97a0;
-  box-shadow: 0 -0.5px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 15px;
 }
 
@@ -431,8 +429,8 @@ h2, p {
 
 .overview-impact p, .overview-cb p, .overview-social p, .overview-metrics p, .overview-profile p {
   font-size: 1.2em;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 20px;
+  margin-right: 20px;
   line-height: 1.6;
 }
 h3 {
@@ -451,6 +449,22 @@ nav a {
 
 .impact-wrap, .social-wrap, .metrics-wrap {
   flex-direction: column;
+}
+
+.fb {
+  order: 0;
+}
+
+.u-icons {
+  margin-left: 22px;
+}
+
+.l-icons {
+  margin-left: 8px;
+}
+
+.fb-card {
+  margin-left: 8px;
 }
 
 .impact-wrap, .metrics-wrap {
