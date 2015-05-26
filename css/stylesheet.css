@@ -421,6 +421,9 @@ h1 {
   font-size: 2.4em;
 }
 
+h2 {
+  line-height: 1.3;
+}
 h2, p {
   text-align: center;
 }
@@ -529,7 +532,12 @@ h3 {
   flex-direction: column;
 }
 .overview-impact, .overview-metrics {
-  order: 1;
+  order: initial;
+}
+
+.overview-impact, .overview-metrics, .fb {
+  flex-grow: initial;
+  order: initial;
 }
 
 .overview-impact p, .overview-cb p, .overview-social p, .overview-metrics p, .overview-profile p {
