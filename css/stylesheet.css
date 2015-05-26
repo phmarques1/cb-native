@@ -451,9 +451,6 @@ nav a {
 .impact-wrap, .social-wrap, .metrics-wrap {
   flex-direction: column;
 }
-.overview-impact, .overview-metrics {
-  order: 1;
-}
 
 .impact-wrap, .metrics-wrap {
   padding-top: 10%;
@@ -537,7 +534,7 @@ h3 {
 
 .overview-impact, .overview-metrics, .fb {
   flex-grow: 0;
-  order: 0;
+  order: 1;
 }
 
 .overview-impact p, .overview-cb p, .overview-social p, .overview-metrics p, .overview-profile p {
