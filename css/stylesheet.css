@@ -351,12 +351,6 @@ p {
   font-weight: 300;
 }
 
-.group::after {
-  content: " ";
-  display: table;
-  clear: both;
-}
-
 /**************************************************************** 
 
 MEDIA QUERIES
@@ -518,6 +512,18 @@ footer p {
         iPhone 6 Plus Portrait
 
         ************************************/
+
+.impact {
+  height: 770px;
+}
+
+.metrics {
+  height: 700px;
+}
+
+.social {
+  height: 790px;
+}
 
 h1 {
   margin-top: 11%;
