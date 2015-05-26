@@ -532,12 +532,12 @@ h3 {
   flex-direction: column;
 }
 .overview-impact, .overview-metrics {
-  order: initial;
+  order: 0;
 }
 
 .overview-impact, .overview-metrics, .fb {
-  flex-grow: initial;
-  order: initial;
+  flex-grow: 0;
+  order: 0;
 }
 
 .overview-impact p, .overview-cb p, .overview-social p, .overview-metrics p, .overview-profile p {
