@@ -431,8 +431,8 @@ h2, p {
 
 .overview-impact p, .overview-cb p, .overview-social p, .overview-metrics p, .overview-profile p {
   font-size: 1.2em;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 200px;
+  margin-right: 200px;
   line-height: 1.6;
 }
 h3 {
@@ -464,9 +464,6 @@ nav a {
   padding-bottom: 12%;
 }
 
-.fb {
-  order: 0;
-}
 
 .profile-wrap {
   position: initial;
@@ -516,18 +513,27 @@ h1 {
 h3 {
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 35px;
+  margin-right: 35px;
   margin-bottom: 85px;
-  font-size: 1.4em;
+  font-size: 1.3em;
   line-height: 1.4;
 }
 .overview-impact h2 {
-  margin-left: 9px;
+  margin-left: 8px;
 }
 
 .impact-wrap, .social-wrap, .metrics-wrap {
   flex-direction: column;
+}
+
+.overview-impact, .overview-metrics {
+  flex-grow: 0;
+}
+
+.fb {
+  order: 0;
+  flex-grow: 0;
 }
 
 .icons {
@@ -537,8 +543,8 @@ h3 {
 
 .overview-impact p, .overview-cb p, .overview-social p, .overview-metrics p, .overview-profile p {
   font-size: 1.3em;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 33px;
+  margin-right: 33px;
   line-height: 1.6;
 }
 
