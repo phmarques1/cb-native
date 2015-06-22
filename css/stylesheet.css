@@ -677,16 +677,19 @@ footer p {
   -webkit-flex-direction: column;
   -moz-flex-direction: column;
   -ms-flex-direction: column;
-  flex-justify-content: center;
-  -webkit-flex-justify-content: center;
-  -moz-flex-justify-content: center;
-  -ms-flex-justify-content: center;
+
 }
 
 .fb {
   order: 0;
 }
 
+.upper-icons, .fb, .lower-icons {
+  flex-justify-content: center;
+  -webkit-flex-justify-content: center;
+  -moz-flex-justify-content: center;
+  -ms-flex-justify-content: center;
+}
 
 }
 
