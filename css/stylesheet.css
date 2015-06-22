@@ -93,12 +93,21 @@ SECTIONS ONE, THREE AND SIX
 
 ****************************************************************/
 
-.impact, .metrics, .social {
+.impact, .metrics {
   width: 100%;
-  height: 100%;
+  height: 380px;
   border-top: 1px solid #d7d7d7;
   border-bottom: 1px solid #d7d7d7;
   overflow: hidden;
+}
+
+.social {
+  width: 100%;
+  height: 500px;
+  border-top: 1px solid #d7d7d7;
+  border-bottom: 1px solid #d7d7d7;
+  overflow: hidden;
+
 }
 
 .impact, .metrics {
@@ -165,7 +174,7 @@ SECTION TWO
 ****************************************************************/
 
 .cb {
-  height: 100%;
+  height: 940px;
   padding-top: 3%;
   padding-bottom: 3.5%;
 }
@@ -644,6 +653,18 @@ h2 {
   padding: 15% 0 15%;
 }
 
+.u-icons {
+  margin-left: 20px;
+}
+
+.fb {
+  margin-left: 5px;
+}
+
+.lower-icons {
+  margin-left: 20px;
+}
+
 .mac-full {
   margin-top: 45px;
 }
@@ -690,7 +711,7 @@ footer p {
 }
 
 .u-icons {
-  margin-left: 40px;
+  margin-left: 37px;
 }
 
 .fb {
