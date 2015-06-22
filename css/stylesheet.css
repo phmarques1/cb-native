@@ -402,7 +402,7 @@ p {
   max-width: 600px;
 }
 
-.impact-wrap, .social-wrap, .metrics-wrap, .lower-icons {
+.impact-wrap, .social-wrap, .metrics-wrap {
   flex-direction: column;
   -webkit-flex-direction: column;
   -moz-flex-direction: column;
@@ -428,14 +428,7 @@ p {
   margin: 0 auto 10px; 
 }
 
-.impact-wrap, .social-wrap, .metrics-wrap, .lower-icons {
-  flex-direction: column;
-  align-self: center;
-}
 
-.fb {
-  order: 0;
-}
 }
 
 @media screen and (max-width: 480px) and (min-width: 321px) {
@@ -453,6 +446,9 @@ p {
 
 .impact-wrap, .social-wrap, .metrics-wrap {
   flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
 }
 
 .fb {
@@ -519,9 +515,11 @@ nav a {
   text-decoration: none;
 }
 
-.impact-wrap, .social-wrap, .metrics-wrap, .lower-icons {
+.impact-wrap, .social-wrap, .metrics-wrap {
   flex-direction: column;
-  align-self: center;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
 }
 
 .fb {
@@ -608,6 +606,17 @@ h2 {
   font-size: 1.4em;
 }
 
+.impact-wrap, .social-wrap, .metrics-wrap {
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+}
+
+.fb {
+  order: 0;
+}
+
 .overview-impact p, .overview-cb p, .overview-social p, .overview-metrics p, .overview-profile p {
   font-size: 1.1em;
   margin: 20px 20px;
@@ -671,6 +680,9 @@ footer p {
 
 .impact-wrap, .social-wrap, .metrics-wrap {
   flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
 }
 
 .fb {
