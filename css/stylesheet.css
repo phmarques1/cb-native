@@ -668,6 +668,15 @@ footer p {
 
         ************************************/
 
+
+.impact-wrap, .social-wrap, .metrics-wrap {
+  flex-direction: column;
+}
+
+.fb {
+  order: 0;
+}
+
 .upper-icons, .fb {
   margin-left: 10px;
 }
@@ -693,7 +702,6 @@ footer p {
 
 .impact-wrap, .social-wrap, .metrics-wrap, .lower-icons {
   flex-direction: column;
-  align-self: center;
 }
 
 .fb {
