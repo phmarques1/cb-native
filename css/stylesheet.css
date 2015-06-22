@@ -29,17 +29,17 @@ nav {
   height: 110px;
   max-width: 1200px;
   margin: 5px auto;
+
 }
 
-
-h1 {
+.logo {
   color: transparent;
-  background: url('../img/cb_logo@2x.png') no-repeat;
   background-size: 231px 31px;
   max-width: 100%;
   height: 31px;
   float: left;
   text-decoration: none;
+  margin-top: 23px;
   margin-left: 10px;
 }
 
@@ -74,6 +74,11 @@ h1 {
   margin-bottom: 0;
 }
 
+.header-wrap h3 {
+  max-width: 500px;
+  margin: 15px auto 90px;
+}
+
 .upper-mac {
   background-size: 1100px 623px;
   max-height: 623px;
@@ -98,6 +103,7 @@ SECTIONS ONE, THREE AND SIX
   background-color: #f6f6f6;
 }
 
+
 .impact-wrap, .metrics-wrap, .social-wrap {
   display: flex;
   max-width: 960px;
@@ -116,7 +122,6 @@ SECTIONS ONE, THREE AND SIX
 
 .overview-impact, .overview-metrics {
   flex-grow: 1;
-  order: -1;
 }
 
 .overview-impact h2, .overview-profile h2, .overview-social h2, 
@@ -160,8 +165,14 @@ SECTION TWO
   padding-bottom: 3.5%;
 }
 
+.overview-cb p {
+  max-width: 500px;
+  margin: 15px auto 90px;
+}
+
 .overview-cb {
   text-align: center;
+  margin: 0 auto;
 } 
 
 .browser {
@@ -170,8 +181,8 @@ SECTION TWO
 }
 
 .browser-cb {
-  background-size: 866px 659px;
-  max-height: 659px; 
+  background-size: 979px 628px;
+  max-height: 628px; 
 }
 
 .overview-cb p {
@@ -357,19 +368,87 @@ MEDIA QUERIES
 
 ****************************************************************/
 
+@media screen and (max-width: 1198px) and (min-width: 769px) {
+
+h2 {
+  text-align: center;  
+  margin: 20px auto 20px;
+}
+
+p {
+  text-align: center;
+  max-width: 600px;
+  margin: 10px auto 10px; 
+}
+
+.profile-wrap {
+  padding: 3% 0 5%;
+}
+
+.fb-card {
+  margin: 30px 0 20px;
+}
+
+.overview-profile h2 {
+  text-align: center;
+  margin: 30px auto;
+  max-width: 600px;
+}
+
+.impact-wrap, .social-wrap, .metrics-wrap, .lower-icons {
+  flex-direction: column;
+  align-self: center;
+}
+
+.fb {
+  order: 0;
+}
+
+}
 
 @media screen and (max-width: 768px) and (min-width: 481px) {
 
-.impact-wrap {
-  flex-direction: column;
+h2 {
+  text-align: center;  
+  margin: 20px auto 20px;
 }
-.overview-impact {
+
+p {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 10px; 
+}
+
+.impact-wrap, .social-wrap, .metrics-wrap, .lower-icons {
+  flex-direction: column;
+  align-self: center;
+}
+
+.fb {
   order: 0;
 }
 }
 
 @media screen and (max-width: 480px) and (min-width: 321px) {
 
+h2 {
+  text-align: center;  
+  margin: 20px auto 20px;
+}
+
+p {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 10px; 
+}
+
+.impact-wrap, .social-wrap, .metrics-wrap {
+  flex-direction: column;
+}
+
+.fb {
+  order: 0;
+}
 
 }
 
@@ -385,7 +464,106 @@ MEDIA QUERIES
 
         ************************************/
 
+.contact {
+  display: none;
+}
+.logo-wrap {
+  text-align: center;
+}
+.logo {
+  margin: 10% auto;
+  float: none;
+  text-align: center;
+}
 
+h2, p {
+  text-align: center;
+}
+
+.header-wrap h2 {
+  margin-top: 0;
+  font-size: 1.4em;
+}
+
+.impact-wrap h2, .cb-wrap h2, .social-wrap h2, .profile-wrap h2, .metrics-wrap h2 {
+  margin-top: 20px;
+  font-size: 1.4em;
+}
+
+.header-wrap h3 {
+  font-size: 1em;
+  margin: 10px 2% 55px;
+  line-height: 1.6;
+}
+
+.upper-mac {
+  margin-bottom: 45px;
+}
+
+.overview-impact p, .overview-cb p, .overview-social p, .overview-metrics p, .overview-profile p {
+  font-size: 0.9em;
+  margin: 15px 15px;
+  line-height: 1.6;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.impact-wrap, .social-wrap, .metrics-wrap, .lower-icons {
+  flex-direction: column;
+  align-self: center;
+}
+
+.fb {
+  order: 0;
+}
+
+
+.impact-wrap {
+  padding: 10% 0;
+}
+
+.metrics-wrap {
+  padding: 15% 0 10%;
+}
+
+.cb-wrap, .social-wrap {
+  padding: 8% 0 12%;
+}
+
+.browser-cb {
+  margin-top: 15px;
+}
+
+.profile-wrap {
+  padding: 15% 0 15%;
+}
+
+.fb-card {
+  margin-top: 15px;
+}
+
+.mac-full {
+  margin-top: 45px;
+}
+
+.overview-profile h2, .overview-metrics h2 {
+  margin: 0 50px;
+}
+
+
+.form {
+  padding: 10% 0 7%;
+}
+
+.form h2 {
+  font-size: 1.4em;
+}
+
+footer p {
+  font-size: 1em;
+}
 
 }
 
@@ -401,203 +579,99 @@ MEDIA QUERIES
 
         ************************************/
 
-.contact {
-  display: none;
-}
-
-h1 {
-  margin-top: 11%;
-  margin-left: 19%;
-}
 
 .header-wrap h2 {
-  font-size: 2.4em;
+  margin-top: 10px;
+  font-size: 1.6em;
+}
+
+.header-wrap h3 {
+  font-size: 1.1em;
+  padding: 0 20px;
 }
 
 h2 {
-  line-height: 1.3;
+  line-height: 1.5;
 }
-h2, p {
-  text-align: center;
+
+.impact-wrap h2, .cb-wrap h2, .social-wrap h2 {
+  margin: 30px 30px 10px;
+  font-size: 1.4em;
 }
 
 .overview-impact p, .overview-cb p, .overview-social p, .overview-metrics p, .overview-profile p {
-  font-size: 1.2em;
-  margin-left: 20px;
-  margin-right: 20px;
-  line-height: 1.6;
-}
-h3 {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-bottom: 85px;
-  font-size: 1.3em;
+  font-size: 1.1em;
+  margin: 20px 20px;
   line-height: 1.6;
 }
 
-nav a {
-  text-decoration: none;
-}
-
-.impact-wrap, .social-wrap, .metrics-wrap {
-  flex-direction: column;
-}
-
-.fb {
-  order: 0;
-}
-
-.u-icons {
-  margin-left: 22px;
-}
-
-.l-icons {
-  margin-left: 8px;
-}
 
 .fb-card {
-  margin-left: 8px;
+  margin-left: 3px;
 }
 
-.impact-wrap, .metrics-wrap {
-  padding-top: 10%;
-  padding-bottom: 10%;
+.impact-wrap {
+  padding: 10% 0;
+}
 
+.metrics-wrap {
+  padding: 15% 0 10%;
 }
 
 .cb-wrap, .social-wrap {
-  padding-top: 9%;
-  padding-bottom: 12%;
-}
-
-
-.profile-wrap {
-  position: initial;
+  padding: 5% 0 12%;
 }
 
 .profile-wrap {
-  padding-top: 10%;
-  padding-bottom: 15%;
+  padding: 15% 0 15%;
 }
+
 .mac-full {
   margin-top: 45px;
 }
-.overview-profile h2, .overview-metrics h2 {
-  margin-left: 50px;
-  margin-right: 50px;
-}
 
-.lower-icons {
-  margin-left: 10px;
+.overview-profile h2, .overview-metrics h2 {
+  margin: 0 20px;
 }
 
 .form {
-  padding-top: 10%;
-  padding-bottom: 7%;
+  padding: 10% 0 7%;
+}
+
+.form h2 {
+  font-size: 1.4em;
 }
 
 footer p {
   font-size: 1em;
 }
+
 }
 
-
+/** 
 
 @media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 3) {
  
-        /***********************************
-
+       
         iPhone 6 Plus Portrait
 
-        ************************************/
-
-.impact {
-  height: 770px;
-}
-
-.metrics {
-  height: 700px;
-}
-
-.social {
-  height: 790px;
-}
-
-.cb {
-  height: 750px;
-}
-
-h1 {
-  margin-top: 11%;
-  margin-left: 22%;
-}
-
-h3 {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: 35px;
-  margin-right: 35px;
-  margin-bottom: 85px;
-  font-size: 1.3em;
-  line-height: 1.4;
-}
-.overview-impact h2 {
-  margin-left: 8px;
-}
-
-.impact-wrap, .social-wrap, .metrics-wrap {
-  flex-direction: column;
-}
-
-.fb {
-  order: 0;
-}
-
-.u-icons {
-  margin-left: 34px;
-}
-
-.l-icons {
-  margin-left: 20px;
-}
-
-.fb-card {
-  margin-left: 16px;
-}
-
-
-.overview-impact p, .overview-cb p, .overview-social p, .overview-metrics p, .overview-profile p {
-  font-size: 1.3em;
-  margin-left: 33px;
-  margin-right: 33px;
-  line-height: 1.6;
-}
-
-footer p {
-  font-size: 1.1em;
-}
 
 }
 
+**/
 
 
-
+/**
 
 @media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 3) {
 
-        /***********************************
 
         iPhone 6 Plus Landscape
-
-        ************************************/
-
-
 
 
 }
 
+**/
 
 
 
