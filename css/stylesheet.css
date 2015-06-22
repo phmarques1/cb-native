@@ -7,13 +7,15 @@ GLOBAL
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  font-smooth: always;
-  -webkit-font-smoothing: antialiased; 
 }
 
 * {
+  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
   box-sizing: border-box;
+  text-shadow: rgba(0,0,0,.01) 0 0 1px;
+  -webkit-font-smoothing: antialiased;
 }
 
 img {
@@ -106,6 +108,9 @@ SECTIONS ONE, THREE AND SIX
 
 .impact-wrap, .metrics-wrap, .social-wrap {
   display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
   max-width: 960px;
   margin: 0 auto;
 }
@@ -202,6 +207,8 @@ SECTION THREE -- ONLY
 
 .fb {
   flex-grow: 1;
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
   order: -1;
 }
 
@@ -397,7 +404,13 @@ p {
 
 .impact-wrap, .social-wrap, .metrics-wrap, .lower-icons {
   flex-direction: column;
-  align-self: center;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-justify-content: center;
+  -webkit-flex-justify-content: center;
+  -moz-flex-justify-content: center;
+  -ms-flex-justify-content: center;
 }
 
 .fb {
@@ -659,14 +672,21 @@ footer p {
 
         ************************************/
 
-.impact-wrap, .social-wrap, .metrics-wrap, .lower-icons {
+.impact-wrap, .social-wrap, .metrics-wrap {
   flex-direction: column;
-  align-self: center;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-justify-content: center;
+  -webkit-flex-justify-content: center;
+  -moz-flex-justify-content: center;
+  -ms-flex-justify-content: center;
 }
 
 .fb {
   order: 0;
 }
+
 
 }
 
