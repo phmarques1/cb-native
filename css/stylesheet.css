@@ -689,12 +689,16 @@ footer p {
   order: 0;
 }
 
-.u-icons, .fb-card {
+.upper-icons {
   margin-left: 10px;
 }
 
-.l-icons {
-  margin-left: 10px;
+.fb {
+  margin-left: 5px;
+}
+
+.lower-icons {
+  margin-left: 35px;
 }
 
 }
